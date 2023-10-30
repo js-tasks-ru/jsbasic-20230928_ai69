@@ -35,7 +35,7 @@ export default class RibbonMenu {
 
   onClickNav = (event) => {
     event.preventDefault();
-    //let tagNav = event.target.closest(".ribbon__inner");
+
     let button = event.target.closest("a");
     if (button) {
       this.#ribbon.querySelector('.ribbon__item_active').classList.remove("ribbon__item_active");
