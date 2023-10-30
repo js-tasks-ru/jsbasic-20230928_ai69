@@ -5,7 +5,7 @@ export default class ProductCard {
     this.product = product;
 
     this._elem = this.render();
-    console.log(this._elem);
+
   }
 
   get elem() {
@@ -43,7 +43,7 @@ export default class ProductCard {
 
     div.addEventListener("click", this.onClick);
     div.addEventListener("product-add", (event) => {
-      console.log("product-add", event.detail);
+
     });
     return div;
   }
