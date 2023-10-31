@@ -62,7 +62,7 @@ export default class Carousel {
     this.divCarousel.append(inner);
 
     this.divCarousel.addEventListener("click", this.onClickArrow);
-    console.log(this.divCarousel.children);
+
     this.divCarousel.addEventListener("click", this.onClick);
     this.divCarousel.addEventListener("product-add", (event) => {});
   }
@@ -70,7 +70,6 @@ export default class Carousel {
   onClick = (event) => {
     let button = event.target.closest(".carousel__button");
     if (button) {
-      alert(button.closest(".carousel__slide").dataset.id);
 
       let addEvent = new CustomEvent("product-add", {
         detail: button.closest(".carousel__slide").dataset.id,
