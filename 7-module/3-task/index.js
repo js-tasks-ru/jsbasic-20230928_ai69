@@ -30,12 +30,7 @@ export default class StepSlider {
 	 </div>`);
 
     this.changeCoordinates(true);
-
-
-    this.#slider.addEventListener("mousedown", this.onMouseDown);
-    //this.#slider.addEventListener("slider-change", (event) => {});
-
-
+    this.#slider.addEventListener("click", this.onMouseDown);
 
   }
 
@@ -78,7 +73,7 @@ export default class StepSlider {
       step.querySelector('.slider__step-active').classList.toggle('slider__step-active');
       step.children[this.value].classList.toggle('slider__step-active');
 
-      
+
     }
   }
 
