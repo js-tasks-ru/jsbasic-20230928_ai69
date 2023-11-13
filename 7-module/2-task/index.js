@@ -19,9 +19,10 @@ export default class Modal {
 
                   <h3 class="modal__title">
                   </h3>
-                  <div class="modal__body"></div>
+
                 </div>
-              </div>)`);
+                <div class="modal__body"></div>
+              </div>`);
 
   }
 
