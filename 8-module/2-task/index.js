@@ -36,10 +36,12 @@ export default class ProductGrid {
     let maxSpici = this.filters.maxSpiciness;
 
     return this.products
-      .filter(x => this.filters.category !== '' ? x.category === category : x)
-      .filter(x => x.spiciness < (maxSpici + 1))
-      .filter(x => this.filters.noNuts ? !x.nuts : x)
-      .filter(x => this.filters.vegeterianOnly ? x.vegeterian : x);
+
+      .filter(x => (this.filters.category !== '' ? x.category === category : true)
+        && x.spiciness < (maxSpici + 1)
+        && (this.filters.vegeterianOnly ? x.vegeterian : true)
+        && (this.filters.noNuts ? !x.nuts : true));
+
   }
 
   updateFilter(filters) {
