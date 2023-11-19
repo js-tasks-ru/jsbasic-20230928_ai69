@@ -14,6 +14,7 @@ import createElement from '../../assets/lib/create-element.js';
 export default class Main {
 
   constructor() {
+
     this.carouselHolderIni = document.body.querySelector('[data-carousel-holder]');
     this.ribbonHolder = document.body.querySelector('[data-ribbon-holder]');
     this.filters = document.body.querySelector('.filters');
@@ -101,5 +102,6 @@ export default class Main {
       });
     });
   }
+
 
 }
