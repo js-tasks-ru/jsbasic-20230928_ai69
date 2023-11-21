@@ -52,5 +52,7 @@ export default class ProductGrid {
 
     this.render(productFilter);
 
+
+
   }
 }

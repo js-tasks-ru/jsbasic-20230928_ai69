@@ -51,7 +51,6 @@ export default class ProductCard {
   onClick = (event) => {
     let button = event.target.closest("button.card__button");
     if (button) {
-      alert(button);
 
       let addEvent = new CustomEvent("product-add", {
         detail: this.product.id,

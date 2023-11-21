@@ -6,8 +6,14 @@ export default class StepSlider {
     this.steps = steps;
     this.value = value;
     this.render();
+
+    this.iniValue();
   }
 
+  iniValue(){
+    let thumb = this.slider.querySelector('.slider__thumb');
+    thumb.firstElementChild.textContent = this.value;
+  }
   get elem() {
     return this.slider;
   }

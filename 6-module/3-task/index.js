@@ -64,7 +64,7 @@ export default class Carousel {
     this.divCarousel.addEventListener("click", this.onClickArrow);
 
     this.divCarousel.addEventListener("click", this.onClick);
-    this.divCarousel.addEventListener("product-add", (event) => {});
+    //this.divCarousel.addEventListener("product-add", (event) => {});
   }
 
   onClick = (event) => {
